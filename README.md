@@ -2,15 +2,13 @@
 
 ## Objective:
 
-
-1. Fetch data from below api, 
+1. Fetch data from the api, 
 [API Link](https://randomuser.me/api?results=10)
 
-2. Create a Leadership board front end which similar to the one in the below webpage,
+2. Create a Leadership board front end which similar to the one in the  webpage,
 [Silicon | About v.1](https://silicon.createx.studio/about-v1.html)
 
-
-
+3. Populate the front end with the data got from the API.
 
 ### Steps to Run,
 
