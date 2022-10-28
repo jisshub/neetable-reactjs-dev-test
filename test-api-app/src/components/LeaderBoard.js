@@ -40,7 +40,7 @@ export default function LeaderBoard() {
                                     </div>
                                     <div className='image__overlay'>
                                         <div className='icon'>
-                                                <Facebook size={30} />
+                                            <Facebook size={30} />
                                         </div>
                                         <div className='icon'>
                                             
