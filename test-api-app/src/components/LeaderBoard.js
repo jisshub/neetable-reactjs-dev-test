@@ -7,7 +7,10 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 
 import './LeaderBoard.css';
-import { Facebook, Folder, Instagram, Linkedin, Twitter } from 'react-bootstrap-icons';
+import { Facebook, 
+        Link, 
+        Linkedin, 
+        Twitter } from 'react-bootstrap-icons';
 
 export default function LeaderBoard() {
     const [url, setUrl] = useState('https://randomuser.me/api?results=12');
@@ -31,10 +34,21 @@ export default function LeaderBoard() {
                                 <Card style={{width: '18rem'}}>
                                     <div className='img-effect'>
                                         <Card.Img
-                                            className='img-effect'
                                             src={`${result.picture.large}`}
                                             style={{borderRadius: '0.5rem'}}
                                         />
+                                    </div>
+                                    <div className='image__overlay'>
+                                        <div className='icon'>
+                                                <Facebook size={30} />
+                                        </div>
+                                        <div className='icon'>
+                                            
+                                            <Linkedin size={30} />
+                                        </div>          
+                                        <div className='icon'>
+                                            <Twitter size={30} />                      
+                                        </div>
                                     </div>
                                     <Card.Body>
                                         <Card.Title>

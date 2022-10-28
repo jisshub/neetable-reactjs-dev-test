@@ -8,7 +8,42 @@ h2{
     margin: 2rem;
 }
 
-.img-effect :hover {
+.img-effect {
+    position: relative;
+    text-align: center;
+    display: block;
+}
+
+/* .img-effect :hover {
     opacity: .75;
-    background-color: #333;
+} */
+
+.image__overlay {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.icon {
+    margin-right: 1rem;
 }
