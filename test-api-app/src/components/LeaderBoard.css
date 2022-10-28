@@ -7,3 +7,7 @@ h2{
 .leaderboard{
     margin: 2rem;
 }
+
+.img-effect :hover {
+    opacity: 1;
+}

@@ -29,10 +29,13 @@ export default function LeaderBoard() {
                                 style={{marginBottom: '2rem'}}
                             >
                                 <Card style={{width: '18rem'}}>
-                                    <Card.Img
-                                        src={`${result.picture.large}`}
-                                        style={{borderRadius: '0.5rem'}}
-                                    />
+                                    <div className='img-effect'>
+                                        <Card.Img
+                                            className='img-effect'
+                                            src={`${result.picture.large}`}
+                                            style={{borderRadius: '0.5rem'}}
+                                        />
+                                    </div>
                                     <Card.Body>
                                         <Card.Title>
                                         {result.name.title}. {result.name.first} {result.name.last}
