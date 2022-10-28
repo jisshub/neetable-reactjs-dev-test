@@ -4,12 +4,6 @@ import {useFetch} from '../hooks/useFetch.js'
 
 export default function LeaderBoard() {
     const [url, setUrl] = useState('https://randomuser.me/api?results=10');
-    const [title, setTitle] = useState('')
-    const [firstName, setFirstName] = useState('');
-    const [lastName, setLastName] = useState('');
-    const [state, setState] = useState('');
-    const [country, setCountry] = useState('');
-    const [picture, setPictire] = useState('');
     const {data: results}=useFetch(url);    
     const resultList = results;
     console.log(resultList);
