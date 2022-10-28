@@ -33,17 +33,6 @@ export default function LeaderBoard() {
                                         src={`${result.picture.large}`}
                                         style={{borderRadius: '0.5rem'}}
                                     />
-                                    <Row>
-                                        <Col>
-                                            <Facebook size={30} />
-                                        </Col>
-                                        <Col>
-                                            <Instagram size={30} />
-                                        </Col>
-                                        <Col>
-                                            <Twitter size={30} />
-                                        </Col>    
-                                    </Row>
                                     <Card.Body>
                                         <Card.Title>
                                         {result.name.title}. {result.name.first} {result.name.last}
