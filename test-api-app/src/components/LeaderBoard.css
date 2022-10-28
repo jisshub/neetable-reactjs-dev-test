@@ -14,10 +14,6 @@ h2{
     display: block;
 }
 
-/* .img-effect :hover {
-    opacity: .75;
-} */
-
 .image__overlay {
     position: absolute;
     top: 40%;

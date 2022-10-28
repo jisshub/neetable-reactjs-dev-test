@@ -8,7 +8,6 @@ import Card from 'react-bootstrap/Card';
 
 import './LeaderBoard.css';
 import { Facebook, 
-        Link, 
         Linkedin, 
         Twitter } from 'react-bootstrap-icons';
 
@@ -31,7 +30,7 @@ export default function LeaderBoard() {
                                 sm={3} 
                                 style={{marginBottom: '2rem'}}
                             >
-                                <Card style={{width: '18rem'}}>
+                                <Card style={{width: '18rem'}} key={result.id}>
                                     <div className='img-effect'>
                                         <Card.Img
                                             src={`${result.picture.large}`}
@@ -40,14 +39,25 @@ export default function LeaderBoard() {
                                     </div>
                                     <div className='image__overlay'>
                                         <div className='icon'>
-                                            <Facebook size={30} />
+                                            <a 
+                                                href='https://www.facebook.com/'
+                                                target={'_blank'}>
+                                                <Facebook size={30} />                                                                                            
+                                            </a>
                                         </div>
                                         <div className='icon'>
-                                            
-                                            <Linkedin size={30} />
+                                            <a 
+                                                href='https://linkedin.com/'
+                                                target={'_blank'}>
+                                                <Linkedin size={30} />
+                                            </a>
                                         </div>          
                                         <div className='icon'>
-                                            <Twitter size={30} />                      
+                                            <a 
+                                                href='https://twitter.com/'
+                                                target={'_blank'}>
+                                                <Twitter size={30} /> 
+                                            </a>                 
                                         </div>
                                     </div>
                                     <Card.Body>
